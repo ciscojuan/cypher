@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>cypherONE</title>
+</head>
+<body class="bg-light">
+    <div class="container text-center">
+        <div class="container bg-secondary rounded mt-3 mb-3 p-3">
+            <h1>Cypher ONE</h1>
+        <h3>Codificador Challege Curso ONE</h3>
+        </div>
+        <div class="row">
+            <div class="col-12 text-start">
+                <ul> Requisitos:
+                    <li>Debe funcionar solo con letras minúsculas.</li>
+                    <li>No deben ser utilizados letras con acentos ni caracteres especiales.</li>
+                    <li>Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.</li>
+                    <li>La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.</li>
+                    <li>El resultado debe ser mostrado en la pantalla.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-3" id="textarea">
+                <h3>Encode / Decode</h3>
+                <textarea name="encode" class="textarea" id="encode" ></textarea>
+                <div class="btn btn-lg btn-primary" onclick="encode()">Encode</div>
+                <div class="btn btn-lg btn-danger" onclick="decode()">Decode</div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6  mb-3" id="textarea">
+                <h3>Result</h3>
+                <textarea name="decode" class="textarea" id="decode" ></textarea> 
+                <div class="btn btn-lg btn-info" onclick="getText()">Copy text</div>
+                <div class="textCopied alert alert-success">Text Copied Successfull!</div>
+            </div>
+
+            <div class="footer ">
+                <h3> Cyfer Application was made by <i>@COD_</i> </h3>
+            </div>
+        </div>
+    </div>
+    <script src="cypher.js"></script>
+</body>
+</html>
